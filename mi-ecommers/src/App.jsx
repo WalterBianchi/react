@@ -9,14 +9,19 @@ import NavBar from './components/NavBar/NavBar'
 
 function App() {
 
+
+  const [valor, setValor] = useState (0)
+
   console.log ("se renderiza app")
+
+  
 
   return (
     <>
-    <NavBar/>
+    <NavBar valor= {valor}/>
 
 
-    <ItemListContainer mensaje="entrega resuelta"/>
+    <ItemListContainer mensaje="entrega resuelta" fn={setValor}/>
     
     </>
   )

@@ -3,7 +3,7 @@ import { useState } from "react"
 
 
 
-const Button =({text, color}) =>{
+const Button =({text, color, fn}) =>{
 
     const [ count, setCount] = useState (0)
 
@@ -11,11 +11,11 @@ const Button =({text, color}) =>{
 
     const click = () => {
         setCount (count+1)
-        
+        fn (count)
     }
 
     return (
-        <button style={{backgroundColor:color}}onClick={()=>click()}>{count}</button>
+        <button style={{backgroundColor:color}}onClick={()=>click()}>{text}</button>
     )
 }
 
