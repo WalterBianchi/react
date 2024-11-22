@@ -1,11 +1,18 @@
 import React,{useEffect, useState} from 'react'
 import Button from '../Button/Button'
-import { getProducts } from '../../data/asyncMonck'
-
+import { getProducts } from '../../data/Backend-falso'
+import ItemList from './ItemList'
 
 
 const ItemListContainer = ({mensaje, fn}) => {
-    const [products, setProducts]= useState ([s])
+    const [products, setProducts]= useState ([])
+
+    useEffect (() => {
+        getProducts ()
+        .then(res => console.log(res))
+        .catch(rej => console.error(rej))
+        .finally( console.log("se resolvio la promesa"))
+    }, [])
 
 
     return (

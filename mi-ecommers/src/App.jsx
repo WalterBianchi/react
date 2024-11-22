@@ -3,7 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/Button/Button'
-import ItemListContainer from './components/itemListContainer/itemListContainer'
+import ItemListContainer from './components/ItemListConteiner/ItemListContainer'
+
+
 
 import NavBar from './components/NavBar/NavBar'
 
@@ -20,7 +22,7 @@ function App() {
     <>
     <NavBar valor= {valor}/>
 
-
+    <img src="/vite.svg" alt="" />
     <ItemListContainer mensaje="entrega resuelta" fn={setValor}/>
     
     </>

@@ -1,8 +1,12 @@
 import React from 'react'
+import { FiShoppingCart } from "react-icons/fi"
+
+
 
 const CartWidget = ({valor}) => {
     return (
-        <div>carrito
+        <div>
+        <FiShoppingCart />
             <span>{valor}</span>
         </div>
         
