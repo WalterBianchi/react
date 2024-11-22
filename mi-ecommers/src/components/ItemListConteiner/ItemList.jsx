@@ -2,15 +2,15 @@ import React from 'react'
 
 const ItemList = ({products}) => {
 
-    console.log (products.map (e => e.nombre))
+    console.log (products.map (elemento => elemento.nombre))
 
 
     return (
     <div>
-        {products.map ((e)=> {
+        {products.map ((elemento)=> {
             return (
                 <h3>
-                    {e.nombre}
+                    {elemento.nombre}
                 </h3>
                 
             )}
