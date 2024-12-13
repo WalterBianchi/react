@@ -1,21 +1,8 @@
-import { useState } from "react"
+import React from 'react'
 
-
-
-
-const Button =({text, color, fn}) =>{
-
-    const [ count, setCount] = useState (0)
-
-    console.log ("se renderiza el componente")
-
-    const click = () => {
-        setCount (count+1)
-        fn (count)
-    }
-
+const Button = ({text,color}) => {
     return (
-        <button style={{backgroundColor:color}}onClick={()=>click()}>{text}</button>
+        <div style={{backgroundColor:color}}>{text}</div>
     )
 }
 

@@ -30,10 +30,10 @@ const base_de_datos = [
 ]
 
 export const getProducts = () => {
-    return new Promise ((res, rej) => {
+    return new Promise ((res, e) => {
         setTimeout (() => {
             res(base_de_datos)
-            rej("error")
+            e("error")
         }, 3000);
         });
     }

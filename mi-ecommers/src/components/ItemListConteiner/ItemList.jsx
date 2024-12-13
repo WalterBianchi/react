@@ -1,21 +1,13 @@
 import React from 'react'
 
-const ItemList = ({products}) => {
+const ItemList = ({productos}) => {
 
-    console.log (products.map (e=> e. nombre))
-    
+    console.log(productos.map(e=> e.nombre))
 
 
     return (
     <div>
-        {products.map ((e) => {
-            return (
-                <h3>
-                    {e.nombre}
-                </h3>
-                
-            )}
-        )}
+        hola
     </div>
     )
 }
