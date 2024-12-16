@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <>
     <NavBar/>
-    <ItemListConteiner mensaje="mis productos"/>
+    <ItemListConteiner mensaje="Bicicletas de triatlon"/>
     </>
   )
 }

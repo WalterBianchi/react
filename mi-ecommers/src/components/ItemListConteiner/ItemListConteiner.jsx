@@ -10,7 +10,7 @@ const ItemListConteiner = ({mensaje}) => {
 
     useEffect (() => {
         getProducts () 
-        .then(res => console.log(res))
+        .then(res => setProductos (res))
         .catch(e => console.error (e))
         .finally (console.log ("promesa resuelta"))
     },[])
@@ -20,11 +20,11 @@ const ItemListConteiner = ({mensaje}) => {
 
     return (
         <>
-    <div>{mensaje}</div>
-    <div>
-        <ItemList productos={productos}/>
-    </div>
-    </>
+            <h2>{mensaje}</h2>
+            <div>
+                <ItemList productos={productos}/>
+            </div>
+        </>
     )
 }
 
